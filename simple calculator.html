@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .cal {
+
+            display: inline-block;
+            border: 3px solid rgb(63, 46, 46);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .operation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+        }
+
+        .btn-info {
+            background-color: rgb(235, 236, 229);
+            font-size: large;
+
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        .numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+
+        }
+
+        .numbers2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .numbers3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cal h1 {
+            color: rgb(135, 45, 238);
+            margin-bottom: 12px;
+        }
+
+        .result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            margin-top: 0pxs;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <form class="cal">
+        <h1>Basic Calculator</h1>
+        <label>Value 1</label>
+        <input placeholder="Enter first Value"> <br> <br>
+
+        <label>Value 2</label>
+        <input placeholder="Enter Second Value"> <br><br><br>
+        <div class="result">
+            <input disabled><br>
+
+        </div>
+
+
+        <div class="operation">
+            <button type="button" class="btn btn-info"><b>+</b></button>
+            <button type="button" class="btn btn-info"><b>-</b></button>
+            <button type="button" class="btn btn-info"><b>/</b></button>
+            <button type="button" class="btn btn-info"><b>*</b></button>
+        </div><br>
+        <!-- number -->
+        <div class="numbers">
+            <button type="button" class="btn btn-info"><b>7</b></button>
+            <button type="button" class="btn btn-info"><b>8</b></button>
+            <button type="button" class="btn btn-info"><b>9</b></button>
+        </div>
+        <div class="numbers2">
+            <button type="button" class="btn btn-info"><b>7</b></button>
+            <button type="button" class="btn btn-info"><b>8</b></button>
+            <button type="button" class="btn btn-info"><b>9</b></button>
+        </div>
+        <div class="numbers3">
+            <button type="button" class="btn btn-info"><b>7</b></button>
+            <button type="button" class="btn btn-info"><b>8</b></button>
+            <button type="button" class="btn btn-info"><b>9</b></button>
+        </div>
+        <hr>
+        <div class="submit">
+            <button type="button" class="btn btn-primary">CAlCULATE</button>
+        </div>
+    </form>
+
+
+    <!-- bootstrap script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

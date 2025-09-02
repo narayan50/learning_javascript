@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var fname= "Narayan";
-         
+        // global scope
+
+        var x = 20;
+        let y = 90;
+        const z = 7;
+        document.write("<br>");
+
+        function scopeExample() {
+            var x = 1; //value reasign
+            let y = 2; //block scope
+            const z = 3; //inside the block
+
+            if (true) { //inside the block
+
+                var x = 23; //updated value
+                let y = 34; //inside the block
+                const z = 76;
+
+                document.write(x);
+                document.write(y);
+                document.write(z);
+                document.write("<br>");
+
+            }
+
+            document.write(x);    //work on it inccorect output 2323
+            document.write(y);
+            document.write(z);
+            document.write("<br>");
+        }
+
+        scopeExample()
+        document.write(x);
+        document.write(y);
+        document.write(z);
+        document.write("<br>");
+
+
+
     </script>
 </body>
+
 </html>
