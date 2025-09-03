@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var a =["Narayan",25, "BCA", "Software Engineer", "pune"]
+    document.write( a + "<br>");
+
+    a[2]= 24; // reasignening the value 
+    delete a[6];
+    
+    document.write(a +"<br>")
+</script>
+
+<script>
+    var b =["Narayan" ,"Samarth", "Akash", " Dinesh" ," dilip", "Sneha"]
+    document.write( b + "<br>");
+    b.sort(); // for sortinhg
+     document.write( b + "<br>");
+     b.reverse(); // reverse z-a
+       document.write( b + "<br>");
+
+
+    
+</script>
+
+<script>
+    var c =["Narayan", "Sneha","Samarth", "Akash", " Dinesh" ," dilip", "mansi"]
+    document.write( c + "<br>");
+    c.pop(); //  delete the ending index
+     c.pop(); //  delete the ending index
+
+     document.write( c + "<br>");
+     c.push("Roshni"); // add the value to ending
+       document.write( c + "<br>");
+    
+</script>
+
+<script>
+    var d =["Narayan", "Sneha","Samarth", "Akash", " Dinesh" ," dilip", "mansi"]
+    document.write( c + "<br>");
+    d.shift("diness"); //  delete the initial index
+    
+     document.write( d + "<br>");
+     c.unshift("akash"); //
+       document.write( c + "<br>");
+    
+</script>
+
+<script>
+    var a =["Narayan", "Sneha","Samarth", ]
+    var b =["Akash", " Dinesh" ," dilip", "mansi"]
+     var j =["Rohini", "Deepika" ," Rahul", "Kamath"]
+   
+   
+    var c= a.concat (b + "<br");
+     document.write(c + "<br" );
+     var d =c.join("/")  // differnciate the value with /
+     document.write(d + "<br")
+     
+     var k = a.concat(b,j)
+     document.write(k)
+
+       </script>
+    
+</body>
+</html>

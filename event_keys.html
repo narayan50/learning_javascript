@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Event{
+            margin-top: 50px;
+            color: yellow;
+        }
+        .Event h1{
+            color: red;
+        }
+    </style>
+</head>
+<body onscroll="hello()">
+    <div class="Event" >
+        <button oncontextmenu="return false"> Right click not allowed</button>
+        <button onresize="hello()">Resize Restrictio</button> <!--better use in body tag-->
+   <button onclick="hello()">single click</button> 
+    <button ondblclick="hello()">double click</button> 
+     <button oncontextmenu="hello()">single click</button> 
+      <button onmouseenter="hello()">on mouse enter</button> 
+          <button onmouseleave="hello()">on mouse leave</button> 
+          <div class="header" onselect="return false"> <!--cant copy-->
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          <h1>Scroll Restriction</h1>
+          </div>
+          <script>
+            function hello()
+            {
+                alert
+                    ("Key Event Example")
+                
+            }
+          </script>
+</body>
+</html>
