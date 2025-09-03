@@ -11,25 +11,31 @@
             background-color: #f2f2f2;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         .calbody {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
+
         .cal {
-            background-color: #fff;
+            background: #e0f7f5;
+            primary: #00bfa6;
+            accent: #ff6f61;
             padding: 30px;
             border-radius: 30px;
             width: 100%;
             max-width: 400px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
+
         .cal h1 {
             color: #6f42c1;
             text-align: center;
             margin-bottom: 20px;
         }
+
         .icon {
             display: flex;
             justify-content: center;
@@ -37,6 +43,7 @@
             color: #007bff;
             margin-bottom: 20px;
         }
+
         input {
             width: 100%;
             padding: 10px;
@@ -44,30 +51,36 @@
             border-bottom: 2px solid #ccc;
             outline: none;
         }
+
         input:focus {
             border-bottom-color: #007bff;
         }
+
         label {
             font-weight: 500;
         }
+
         .result input {
             background-color: #f9f9f9;
             font-weight: bold;
             color: #333;
             text-align: center;
         }
+
         .operation {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 20px;
         }
+
         .operation button {
             flex: 1 1 30%;
             padding: 10px;
             font-size: 18px;
             border-radius: 6px;
         }
+
         .submit {
             margin-top: 20px;
             text-align: center;
@@ -110,14 +123,63 @@
     </section>
 
     <script>
-       var a,b, result;
+        var a, b, result;
 
-       function add()
-       {
-        a=NUMBER(Document.myform.n1.value)
-          b=NUMBER(Document.myform.n1.value)
-          result=a+b;
-       }
+        function add() // finction calling
+        {
+            a = Number(document.myform.n1.value)  //accesing the Dom and storing the value in the var
+            b = Number(document.myform.n2.value) // in input type by default the output is appear as string so here we are converting it with int usin Number (inbuit)
+            result = a + b; //addition of the number *
+
+            document.myform.res.value = result
+        }
+
+        //    substraction
+        var a, b, result;
+
+        function sub() {
+            a = Number(document.myform.n1.value)  //accesing the Dom and storing the value in the var
+            b = Number(document.myform.n2.value) // in input type by default the output is appear as string so here we are converting it with int usin Number (inbuit)
+            result = a - b; //substraction of the number *
+
+            document.myform.res.value = result
+        }
+
+        //    division
+        var a, b, result;
+
+        function div() {
+            a = Number(document.myform.n1.value)  //accesing the Dom and storing the value in the var
+            b = Number(document.myform.n2.value) // in input type by default the output is appear as string so here we are converting it with int usin Number (inbuit)
+            result = a / b; //division of the number *
+
+            document.myform.res.value = result
+        }
+
+        //    multiplication
+        var a, b, result;
+
+        function multi() {
+            a = Number(document.myform.n1.value)  //accesing the Dom and storing the value in the var
+            b = Number(document.myform.n2.value) // in input type by default the output is appear as string so here we are converting it with int usin Number (inbuit)
+            result = a * b; //multiplication of the number *
+
+            document.myform.res.value = result
+        }
+
+
+        //    modulus
+        var a, b, result;
+
+        function mod() {
+            a = Number(document.myform.n1.value)  //accesing the Dom and storing the value in the var
+            b = Number(document.myform.n2.value) // in input type by default the output is appear as string so here we are converting it with int usin Number (inbuit)
+            result = a % b; //modulus of the number *
+
+            document.myform.res.value = result
+        }
+
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
