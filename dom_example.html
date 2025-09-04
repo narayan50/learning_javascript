@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading" style="color: blue;">This is simple Output</h2>
+    <button onclick="changeText()">Click me</button>
+    
+    <p id="Paragraph">This is Paragraph</p>
+    <button ondblclick="changecolor()">click me</button>
+
+    <script>
+        function changeText(){
+            document.getElementById("heading").innerHTML="Welcome to Dom In Javascript";
+
+            function  changecolor(){
+                document.getElementById("Paragraph").style.color ="red";
+                document.getElementById("Paragraph").style.fontSize="30px"
+            }
+        }
+    </script>
+</body>
+</html>
