@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var details={
+            fname: 'Narayan',
+            lname: 'Tamatta',
+            age: 25,
+            mail:'narayantamatta@yahoo.com',
+            favplayer:['yuraj','jadeja', 'dhoni'] ,//array in obj
+            add:{
+                'city':'Pune',
+                'country':'india',
+            },
+            phone:976744923,
+            message: "today im going to solapur"
+
+        }
+
+        document.write("My city is "+details.add.city)
+    </script>
+    
+    <script>
+        
+        var employee = {
+        id: 101,
+        name: "Rahul Sharma",
+        age: 28,
+        department: "Software Development",
+        salary: 55000,
+        skills: ["JavaScript", "HTML", "CSS", "React"],   // array
+        address: {
+            city: "Mumbai",
+            state: "Maharashtra",
+            country: "India"
+        },
+        isActive: true
+    };
+
+    document.write("Employee Name: " + employee.name + "<br>");
+    document.write("City: " + employee.address.city + "<br>");
+    document.write("Skills: " + employee.skills.join(", "));
+</script>
+</body>
+</html>

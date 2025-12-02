@@ -38,11 +38,7 @@
             }
             
         }
-           function ShowTime(){
-            let now = new Date();
-            let time = now.toLocaleTimeString(); // fixed spelling
-            document.getElementById("Clock").innerHTML = time; 
-        }
+         
 
         setInterval(ShowTime, 1000);
         ShowTime(); 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var students = [
+        {
+            name: 'Anish',
+            age: 21,
+            address: "Pune"
+        },
+        {
+            name: 'Rohit',
+            age: 22,
+            address: "Mumbai"
+        },
+        {
+            name: 'Priya',
+            age: 20,
+            address: "Nashik"
+        }
+    ];
+
+    for (let i = 0; i < students.length; i++) {
+        document.write("<h3>Student " + (i + 1) + "</h3>");
+        document.write("Name: " + students[i].name + "<br>");
+        document.write("Age: " + students[i].age + "<br>");
+        document.write("Address: " + students[i].address + "<br>");
+        document.write("<hr>");
+    }
+</script>
+<script>
+    
+</script>
+
+</body>
+</html>
