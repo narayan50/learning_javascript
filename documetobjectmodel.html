@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+       EXAMPLE DOM (change text using dom)
+    </h1>
+    <h2 id="title" style="color: greenyellow">OLD HEADING</h2>
+    <button ondblclick="changetext()">Click here to Generate OTP</button>
+    <script>
+            function changetext(){
+                document.getElementById('title').innerHTML="90235"
+                document.getElementById('title').style.color='red';
+            }
+   </script>
+   <div class="img-container">
+    <h1 id="okimg">click to change</h1>
+   <img style="height: 300px; width: 300px; display: flex;" src="../Css_learning/CSS/IMAGE/cat-9569386_1920.jpg" class="img">
+   <button onclick="changeimg()">click me</button>
+   </div>
+   <script>
+    function changeimg(){
+
+        document,getElementById(okimg).src='../coffee_shop/images/cofffee_image.png'
+    }
+   </script>
+
+</body>
+</html>
